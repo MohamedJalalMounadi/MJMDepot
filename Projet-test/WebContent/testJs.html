@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="MJform">
+<input type="text" id="mjinput" >
+<input type="text" id="mjinput1" >
+<input type="button" value="ajouter Facture " onclick="AjouterFacture()">
+<input type="button" value="visualiser facture " >
+</form>
+
+<div id="information_client">
+<form name="info_client">
+<table>
+<tr><td> nom & prenom </td><td> E-mail </td> <td> id </td> </tr>
+<tr><td> <input name="nom_prenom" type="text"></td><td><input name="E_mail" type="text" ></td> <td> <input name="id" type="text" ></td> </tr>
+</table>
+
+
+</form>
+
+
+</div>
+</body>
+<script type="text/javascript">
+function AjouterFacture(){
+var pink ; 
+pink= document.getElementById("mjinput").value ; 
+/*var green = 200 ;
+ var black = parseInt(pink) + parseInt(green);*/
+alert("Hello "+ pink);
+}
+</script>
+</html>

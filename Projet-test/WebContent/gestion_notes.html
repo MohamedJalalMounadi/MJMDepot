@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Exercice 2</title>
+
+<style>
+#content{
+	padding-left: 5px;
+	padding-top: 30px;
+	padding-bottom:30px;
+	background-color: #e6f1f6;
+	border-radius: 4px;
+	width: 800px;
+}
+.erreur{
+	background-color: #cedaff;
+	border-radius:4px;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="content">
+	<h1>Gestion de notes:</h1>
+	<form name="form1">
+		<table>
+			<tr>
+				<td>Nom:</td>
+				<td><input type="text" name="nom" id="nom" /></td>
+				<td>CIN:</td>
+				<td><input type="text" name="cin" id="cin" /></td>
+				<td>Email:</td>
+				<td><input type="text" name="mail" id="email" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan=5><div class="erreur" id="err1"></div></td>
+			</tr>
+			<tr>
+				<td>Module 1:</td>
+				<td><input type="text" name="mod1" /></td>
+				<td>Module 2:</td>
+				<td><input type="text" name="mod2" /></td>
+				<td>Module 3:</td>
+				<td><input type="text" name="mod3" /></td>
+			</tr>
+			<tr>
+				<td colspan=3></td>
+				<!--<td><input type="reset" value="Reset"/></td>--><!-- il y a cette methode sans javascript -->
+				<td><input type="button" value="Reset" onclick="initialiser()" /></td>
+				<td></td>
+				<td><input  type="button" onclick="verifier()" value="Valider"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan=5><div class="erreur" id="err2"></div></td>
+			</tr>
+		</table>
+	</form>
+</div><p/>
+<div id="information"></div>
+
+</body>
+</html>
